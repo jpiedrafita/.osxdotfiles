@@ -1,0 +1,12 @@
+alias config='/usr/bin/git --git-dir=$HOME/.osxdotfiles/ --work-tree=$HOME'
+alias update="source ~/.zshrc"
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias myip="curl http://ipecho.net/plain; echo"
+alias usage='du -h -d1'
+alias runp="lsof -i"
+alias topten="history | commands | sort -rn | head"
+alias dirs='dirs -v | head -10'
+alias open="code"
+alias lll="ls -la"
+alias push="~/.scripts/QuickiePush.sh"
+alias size="du -sh"
