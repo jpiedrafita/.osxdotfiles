@@ -5,9 +5,17 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
-" let Vundle manage Vundle, required
+"Let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+"Themes
+Plugin 'morhetz/gruvbox'
+
+"IDE
+Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/nerdtree'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'kaikataldo/material.vim'
 Plugin 'cormacrelf/vim-colors-github'
 Plugin 'vim-python/python-syntax'
@@ -15,15 +23,8 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 "Paquetes Plug
-call plug#begin('~/.vim/plugged')
-"Themes
-Plug 'morhetz/gruvbox'
-"IDE
-Plug 'easymotion/vim-easymotion'
-Plug 'scrooloose/nerdtree'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'ycm-core/YouCompleteMe'
-call plug#end()
+"call plug#begin('~/.vim/plugged')
+"call plug#end()
 
 "Configuracion plugins
 colorscheme gruvbox
@@ -52,7 +53,7 @@ set sw=2			"2 espacios de indentacion
 "set relativenumber		"Muestra líneas relativas 
 set laststatus=2
 "set noshowmode
-
+set backspace=indent,eol,start
 "Custom aliases
 "alias ll="ls -la";
 "alias ..="cd ../";
